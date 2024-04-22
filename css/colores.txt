@@ -1,0 +1,5 @@
+#201C30 ---negro azulado
+#36ADBA ---verde claro
+#C7A2BC ---rosa palido
+#6A2A46 ---violeta
+#327FA0 ---celeste

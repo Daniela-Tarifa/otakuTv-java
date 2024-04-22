@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#f3f3f3;
+    --secundary-color:#161516;
+    --secundary-color-t:#201C30;
+    --third-color:#36ADBA;
+    --third-color-t:#327FA0;
+    --four-color:#C7A2BC;
+    --four-color-t:#6A2A46;
+    --grosor-negrita:bold;
+}
+body::-webkit-scrollbar {
+    width: 12px;               /*ancho de toda la barra de desplazamiento*/
+}
+  
+body::-webkit-scrollbar-track {
+    background: var(--third-color-t);        /*color del área de seguimiento*/
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--four-color-t);    /*color del área de seguimiento*/
+    border: 3px solid var(--four-color-t);  /*crea relleno alrededor del scroll de desplazamiento*/
+}
+body{
+    font-family: "Nunito Sans", sans-serif;
+    background-color: var(--secundary-color-t);
+    color: var(--main-color);
+}
+.otakutv-bg-violeta{
+    background-color: var(--four-color-t);
+}
+.otakutv-color-blanco{
+    color: var(--main-color); 
+}
+.otakutv-color-rosa{
+    color: var(--four-color);
+}
+.otakutv-bg-azul{
+    background-color: var(--secundary-color-t);
+}
+.otakutv-bg-rosa{
+    background-color: var(--four-color);
+}
+.otakutv-btn-principal{
+    background-color: var(--third-color-t);
+    color: black;
+    border-radius: 25px;
+    border-width: 3px;
+}
+.otakutv-btn-secundario{
+    background-color: var(--third-color-t);
+    color:var(--secundary-color-t);
+    border-radius: 25px;
+    border-color: var(--third-color);
+    border-width: 3px;
+}
+.otakutv-input-busqueda{
+    border-radius: 25px;
+}
+/******index******/
+.otakutv-index-section-bienvenida{
+    background: linear-gradient(to right top,  #00000073, #00000073), url(../assets/img/banner-bienvenida.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 90vh;
+    padding-right: 80px;
+}
+.otakutv-index-section-texto{
+    width: 90vh;
+}
+@media(max-width: 1000px){
+    .otakutv-index-section-bienvenida{
+        background-position: left;
+        padding: 0px 50px;
+    }
+}
+.otakutv-index-seccion-busqueda{
+    padding: 0 15rem;
+}
+@media(max-width:1000px ) {
+    .otakutv-index-seccion-busqueda{
+        padding: 3rem;
+    }
+}
+.otakutv-index-seccion-aclamadas::-webkit-scrollbar {
+    height: 12px;               /*ancho de toda la barra de desplazamiento*/
+}
+  
+.otakutv-index-seccion-aclamadas::-webkit-scrollbar-track {
+    background: var(--third-color-t);        /*color del área de seguimiento*/
+}
+  
+.otakutv-index-seccion-aclamadas::-webkit-scrollbar-thumb {
+    background-color: var(--four-color-t);    /*color del área de seguimiento*/
+    border: 3px solid var(--four-color-t);  /*crea relleno alrededor del scroll de desplazamiento*/
+}
+/******Detalle******/
+.otakutv-detalle-img-cartel-fondo{
+    background: linear-gradient(to right top,  #6d6969a7, #6d6969a7), url(../assets/img/one-piece.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+}
+.otaku-detalle-contenedor-descripcion{
+    padding-top: 85px;
+}
+.otakutv-detalle-img-cartel{
+    border-radius: 25px;
+    width: 300px;
+    height: auto;
+}
+.otakutv-detalle-container-trailer{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.otaku-detalle-redes{
+    li{
+        list-style: none;
+    }
+    a{
+        color: var(--four-color);
+        font-size: 2.5rem;
+    }
+}
+/******Registro******/
+.otakutv-seccion-registro{
+    width: 30%;
+    padding: 50px;
+}
+@media(max-width:1000px){
+    .otakutv-seccion-registro{
+        width: initial;
+    }
+}
+.otakutv-input{
+    border-radius: 25px;
+    color: var(--four-color);
+    background-color:var(--third-color-t);
+    border:2px solid var(--third-color);
+    width: 100%;
+    margin-bottom: 5px;
+    height: 35px;
+    padding: 0px 20px;
+    font-size: 1.2rem;
+    /*
+    outline: none;*/
+}
+.otakutv-registro-fondo{
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}

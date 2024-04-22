@@ -1,0 +1,69 @@
+/**importación de fuentes**/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+@font-face {
+    font-family: "It_superior-regular";
+    src: url("../assets/fonts/It_superior/LTSuperior-Regular.otf");
+}
+
+/*reseteo de valores del css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+/*h1{
+    font-family: 'It_superior-regular';
+}*/
+
+/**estilos del body**/
+body{
+    background-color: black;
+    color: #e0dcdc;
+}
+/**estilos del header index y detalle**/
+.headerPrincipal{
+    /*background-image: linear-gradient(to right top, #0654c7, #5653d9, #894de5, #ba3dec, #e912eb);*/
+    background-image: linear-gradient(to right top,  #5653d9, #894de5); /*to rigth top, va hasta arriba a la derecha de forma lineal*/
+}
+.headerPrincipalContenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.headerPrincipalLogo{
+    width: 50px;
+}
+.headerPrincipalSusAnclas{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+.headerPrincipalAncla{
+    /*border:  1px solid #e0dcdc;*/
+    margin: 15px 20px;
+    list-style: none;
+}
+.headerPrincipalAncla > a{
+    text-decoration: none;
+    color: #e0dcdc;
+    font-weight:bold;
+}
+
+/**estilos del header registro y inicio de sesión**/
+
+/**estilos del main del index**/
+.indexSectionPrincipal{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right top,  #00000082, #00000082), url(../assets/img/banner-bg.jpg);
+    background-size: cover;/*esta proipedad dice q el tamaño del BACKGROUND tiene q ocupar todo el espacio disponible*/
+    background-position: center;
+    /*background-attachment: fixed; Deja q la imagen se quede quieta en la pantalla y que scrolee el texto hasta q termine
+    background-repeat: no-repeat;*/
+    height: 92vh;
+    justify-content: center;
+    align-items: center;
+}
