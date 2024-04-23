@@ -37,9 +37,6 @@ body{
 .otakutv-bg-azul{
     background-color: var(--secundary-color-t);
 }
-.otakutv-bg-rosa{
-    background-color: var(--four-color);
-}
 .otakutv-color-blanco{
     color: var(--main-color); 
 }
@@ -101,8 +98,6 @@ body{
     background-color: var(--four-color-t);    /*color del área de seguimiento*/
     border: 3px solid var(--four-color-t);  /*crea relleno alrededor del scroll de desplazamiento*/
 }
-/* Estilo inicial del párrafo */
-
 .otakutv-index-card  {
     img{
         transition: transform 0.3s; /* Transición suave para el efecto de zoom */
@@ -117,11 +112,9 @@ body{
         border-radius: 5px;
     }
 }
-/* Mostrar el párrafo al hacer hover sobre la tarjeta */
-.otakutv-index-card:hover {
+.otakutv-index-card:hover { /* Mostrar el párrafo al hacer hover sobre la tarjeta */
     img{
         transform: scale(1.1); /* Hacer zoom en la imagen al 110% */
-
     }
     p {
     display: flex;
@@ -129,22 +122,19 @@ body{
     align-items: center;
     }
 }
-
 /******Detalle******/
 .otakutv-detalle-img-cartel-fondo{
     background: linear-gradient(to right top,  #6d6969a7, #6d6969a7), url(../assets/img/one-piece.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 65vh;
+    height: 70vh;
 }
-
 @media(max-width:1024px){
     .otakutv-detalle-img-cartel-fondo{
         height: initial;
     }
 }
-
 .otakutv-detalle-contenedor-descripcion{
     padding-top: 85px;
 }
@@ -195,10 +185,11 @@ body{
     outline: none;
 }
 .otakutv-registro-fondo, .otakutv-inicio-sesion-fondo{
-    top: 50%;
-    left: 50%;
-    width: 200%;
-    transform: translate(-50%, -50%);
+    width: 200%; 
     background-size: cover;
     z-index: -1;
 }
+.otakutv-registro-texto-termino{
+    font-size: 0.8rem;
+}
+
