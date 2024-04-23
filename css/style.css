@@ -34,17 +34,17 @@ body{
 .otakutv-bg-violeta{
     background-color: var(--four-color-t);
 }
-.otakutv-color-blanco{
-    color: var(--main-color); 
-}
-.otakutv-color-rosa{
-    color: var(--four-color);
-}
 .otakutv-bg-azul{
     background-color: var(--secundary-color-t);
 }
 .otakutv-bg-rosa{
     background-color: var(--four-color);
+}
+.otakutv-color-blanco{
+    color: var(--main-color); 
+}
+.otakutv-color-rosa{
+    color: var(--four-color);
 }
 .otakutv-btn-principal{
     background-color: var(--third-color-t);
@@ -82,6 +82,7 @@ body{
 }
 .otakutv-index-seccion-busqueda{
     padding: 0 15rem;
+    margin: 50px 0;
 }
 @media(max-width:1000px ) {
     .otakutv-index-seccion-busqueda{
@@ -100,15 +101,51 @@ body{
     background-color: var(--four-color-t);    /*color del área de seguimiento*/
     border: 3px solid var(--four-color-t);  /*crea relleno alrededor del scroll de desplazamiento*/
 }
+/* Estilo inicial del párrafo */
+
+.otakutv-index-card  {
+    img{
+        transition: transform 0.3s; /* Transición suave para el efecto de zoom */
+    }
+    p{  display: none; /* Ocultar el párrafo inicialmente */
+        background: linear-gradient(to right top,  #00000073, #00000073); /* Fondo negro con transparencia */
+        font-size: 1.5rem;
+        color: var(--main-color);
+        backdrop-filter: blur(5px); /* Efecto blur */
+        border: 1px solid #00000073;
+        padding: 0 25px;
+        border-radius: 5px;
+    }
+}
+/* Mostrar el párrafo al hacer hover sobre la tarjeta */
+.otakutv-index-card:hover {
+    img{
+        transform: scale(1.1); /* Hacer zoom en la imagen al 110% */
+
+    }
+    p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
 /******Detalle******/
 .otakutv-detalle-img-cartel-fondo{
     background: linear-gradient(to right top,  #6d6969a7, #6d6969a7), url(../assets/img/one-piece.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 70vh;
+    height: 65vh;
 }
-.otaku-detalle-contenedor-descripcion{
+
+@media(max-width:1024px){
+    .otakutv-detalle-img-cartel-fondo{
+        height: initial;
+    }
+}
+
+.otakutv-detalle-contenedor-descripcion{
     padding-top: 85px;
 }
 .otakutv-detalle-img-cartel{
@@ -120,7 +157,7 @@ body{
     margin-top: 150px;
     margin-bottom: 100px;
 }
-.otaku-detalle-redes{
+.otakutv-detalle-redes{
     li{
         list-style: none;
     }
@@ -129,33 +166,39 @@ body{
         font-size: 2.5rem;
     }
 }
-/******Registro******/
-.otakutv-seccion-registro{
+/******Registro y Inicio Sesión******/
+.otakutv-seccion-registro, .otakutv-seccion-inicio-sesion{
     width: 30%;
     padding: 50px;
+    border:1px solid var(--third-color-t);
+    border-radius: 25px;
+
+    a:hover{
+        color: var(--third-color);
+    }
 }
 @media(max-width:1000px){
-    .otakutv-seccion-registro{
+    .otakutv-seccion-registro, .otakutv-seccion-inicio-sesion{
         width: initial;
+        margin: 0 10px;
     }
 }
 .otakutv-input{
     border-radius: 25px;
     color: var(--four-color);
-    background-color:var(--third-color-t);
     border:2px solid var(--third-color);
     width: 100%;
     margin-bottom: 5px;
     height: 35px;
     padding: 0px 20px;
     font-size: 1.2rem;
-    /*
-    outline: none;*/
+    outline: none;
 }
-.otakutv-registro-fondo{
+.otakutv-registro-fondo, .otakutv-inicio-sesion-fondo{
     top: 50%;
     left: 50%;
     width: 200%;
     transform: translate(-50%, -50%);
     background-size: cover;
+    z-index: -1;
 }

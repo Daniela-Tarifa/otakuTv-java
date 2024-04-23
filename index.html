@@ -3,19 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CACFLIX | Catalogo de peliculas</title>
+        <title>OtakuTV | Catalogo de peliculas</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <!--libreria de fontawesome-->
         <script src="https://kit.fontawesome.com/8dd354e374.js" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/style.css">
-    </head>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark otakutv-bg-violeta p-0">
             <div class="container">
               <a class="navbar-brand" href="./index.html">
                 <img src="./favicon.ico" alt="Logo de OtakuTV" width="100">
-                <span class="fs-4">otakuTV</span>
+                <span class="fs-4">OtakuTV</span>
               </a>
                 <!--menu hamburgesa-->
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,110 +40,194 @@
                 </div>
                 
             </section>
-            <section class="container otakutv-index-seccion-busqueda d-flex flex-column my-5" loading="lazy">
-                <h2 class="text-center my-3">¿Qué estas buscando para ver?</h2>
+            <section class="container-fluid otakutv-index-seccion-busqueda d-flex flex-column my-5" loading="lazy" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <h2 class="text-center my-5">¿Qué estas buscando para ver?</h2>
                 <form class="d-flex flex-row">
                     <input class="form-control me-2 otakutv-input-busqueda" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn otakutv-btn-secundario" type="submit">Search</button>
                 </form>
+                <hr class="my-5 p-1 otakutv-bg-violeta">
             </section>
-            <section id="tendencias" class="container my-5" loading="lazy">
+            <section id="tendencias" class="container my-5" loading="lazy" data-aos="fade-up" data-aos-anchor-placement="top-center">
                 <h2 class="d-flex justify-content-center mt-5 my-3">Las tendencias de hoy</h2>
                 <div class="row row-cols-1 row-cols-md-4 g-4 mx-5">
-                    <a href="./pages/detalle.html" class="col">
-                      <div class="card h-90">
-                        <img src="./assets/img/tensei-shitara-slime-datta-ken.jpg" class="card-img-top" alt="...">
+                    <a href="./pages/detalle.html" class="col" >
+                      <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
+                        <img src="./assets/img/tensei-shitara-slime-datta-ken.jpg" class="card-img-top rounded " alt="...">
+                        <div class=" text-center ">
+                              <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >tensei-shitara-slime-datta</p>
+                        </div>
                       </div>
                     </a>
-                    <a href="./pages/detalle.html" class="col">
-                      <div class="card h-60">
-                        <img src="./assets/img/one-punch-man.jpg" class="card-img-top" alt="...">
+                    <a href="./pages/detalle.html" class="col" >
+                      <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
+                        <img src="./assets/img/one-piece.jpg" class="card-img-top rounded " alt="...">
+                        <div class=" text-center ">
+                              <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >tensei-shitara-slime-datta</p>
+                        </div>
                       </div>
                     </a>
-                    <a href="./pages/detalle.html" class="col">
-                      <div class="card h-60">
-                        <img src="./assets/img/one-piece.jpg" class="card-img-top" alt="...">
+                    <a href="./pages/detalle.html" class="col" >
+                      <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
+                        <img src="./assets/img/one-punch-man.jpg" class="card-img-top rounded " alt="...">
+                        <div class=" text-center ">
+                              <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >tensei-shitara-slime-datta</p>
+                        </div>
                       </div>
                     </a>
-                    <a href="./pages/detalle.html" class="col">
-                      <div class="card h-60">
-                        <img src="./assets/img/sakura-cardcaptor.jpg" class="card-img-top" alt="...">
+                    <a href="./pages/detalle.html" class="col" >
+                      <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
+                        <img src="./assets/img/sakura-cardcaptor.jpg" class="card-img-top rounded " alt="...">
+                        <div class=" text-center ">
+                              <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >tensei-shitara-slime-datta</p>
+                        </div>
                       </div>
                     </a>
-                    <a href="./pages/detalle.html" class="col">
-                        <div class="card h-90">
-                          <img src="./assets/img/tensei-shitara-slime-datta-ken.jpg" class="card-img-top" alt="...">
+                    <a href="./pages/detalle.html" class="col" >
+                      <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
+                        <img src="./assets/img/shield-hero.jpg" class="card-img-top rounded " alt="...">
+                        <div class=" text-center ">
+                              <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >tensei-shitara-slime-datta</p>
                         </div>
-                      </a>
-                      <a href="./pages/detalle.html" class="col">
-                        <div class="card h-60">
-                          <img src="./assets/img/one-punch-man.jpg" class="card-img-top" alt="...">
+                      </div>
+                    </a>
+                    <a href="./pages/detalle.html" class="col" >
+                      <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
+                        <img src="./assets/img/attack-of-titan.jpg" class="card-img-top rounded " alt="...">
+                        <div class=" text-center ">
+                              <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >tensei-shitara-slime-datta</p>
                         </div>
-                      </a>
-                      <a href="./pages/detalle.html" class="col">
-                        <div class="card h-60">
-                          <img src="./assets/img/one-piece.jpg" class="card-img-top" alt="...">
+                      </div>
+                    </a>
+                    <a href="./pages/detalle.html" class="col" >
+                      <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
+                        <img src="./assets/img/boku-no-hero.jpg" class="card-img-top rounded " alt="...">
+                        <div class=" text-center ">
+                              <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >tensei-shitara-slime-datta</p>
                         </div>
-                      </a>
-                      <a href="./pages/detalle.html" class="col">
-                        <div class="card h-60">
-                          <img src="./assets/img/sakura-cardcaptor.jpg" class="card-img-top" alt="...">
+                      </div>
+                    </a>
+                    <a href="./pages/detalle.html" class="col" >
+                      <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
+                        <img src="./assets/img/detective-conan.jpg" class="card-img-top rounded " alt="...">
+                        <div class=" text-center ">
+                              <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >tensei-shitara-slime-datta</p>
                         </div>
-                      </a>
+                      </div>
+                    </a><a href="./pages/detalle.html" class="col" >
+                      <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
+                        <img src="./assets/img/dragon-ball-z.jpg" class="card-img-top rounded " alt="...">
+                        <div class=" text-center ">
+                              <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >tensei-shitara-slime-datta</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="./pages/detalle.html" class="col" >
+                      <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
+                        <img src="./assets/img/hunter-x-hunter.jpg" class="card-img-top rounded " alt="...">
+                        <div class=" text-center ">
+                              <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >tensei-shitara-slime-datta</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="./pages/detalle.html" class="col" >
+                      <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
+                        <img src="./assets/img/jojo-bizarre-adventure.jpg" class="card-img-top rounded " alt="...">
+                        <div class=" text-center ">
+                              <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >tensei-shitara-slime-datta</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="./pages/detalle.html" class="col" >
+                      <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
+                        <img src="./assets/img/jujutsu-no-kaisen.jpg" class="card-img-top rounded " alt="...">
+                        <div class=" text-center ">
+                              <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >tensei-shitara-slime-datta</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="./pages/detalle.html" class="col" >
+                      <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
+                        <img src="./assets/img/kimetsu-no-yaiba.jpg" class="card-img-top rounded " alt="...">
+                        <div class=" text-center ">
+                              <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >tensei-shitara-slime-datta</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="./pages/detalle.html" class="col" >
+                      <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
+                        <img src="./assets/img/Little-Witch-Academia.jpg" class="card-img-top rounded " alt="...">
+                        <div class=" text-center ">
+                              <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >tensei-shitara-slime-datta</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="./pages/detalle.html" class="col" >
+                      <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
+                        <img src="./assets/img/madoka-magica.jpg" class="card-img-top rounded " alt="...">
+                        <div class=" text-center ">
+                              <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >tensei-shitara-slime-datta</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="./pages/detalle.html" class="col" >
+                      <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
+                        <img src="./assets/img/mirai-nikki.jpg" class="card-img-top rounded " alt="...">
+                        <div class=" text-center ">
+                              <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >tensei-shitara-slime-datta</p>
+                        </div>
+                      </div>
+                    </a>
                   </div>
                 <div class="text-center my-3">
                     <button class="btn otakutv-btn-secundario">Anterior</button>
                     <button class="btn otakutv-btn-secundario">Siguiente</button>
                 </div>
-                
             </section>
-            <section class="container my-5" loading="lazy">
-                <h2>Las más aclamadas</h2>
+            <section class="container my-5" loading="lazy" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <h2 class="my-4 text-center">Las más aclamadas</h2>
                 <div class="row row-cols-2 row-cols-md-5 g-4  flex-nowrap overflow-auto otakutv-index-seccion-aclamadas mx-1">
-                    <a href="./pages/detalle.html" class="col">
+                    <a href="./pages/detalle.html" class="col my-3">
                       <div class="card h-90">
-                        <img src="./assets/img/tensei-shitara-slime-datta-ken.jpg" class="card-img-top" alt="..." loading="lazy">
+                        <img src="./assets/img/Pichi_Pichi_Pitch.jpg" class="card-img-top" alt="..." loading="lazy">
                       </div>
                     </a>
-                    <a href="./pages/detalle.html" class="col">
+                    <a href="./pages/detalle.html" class="col my-3">
                       <div class="card h-60">
-                        <img src="./assets/img/one-punch-man.jpg" class="card-img-top" alt="..." loading="lazy">
+                        <img src="./assets/img/sailor-moon.jpg" class="card-img-top" alt="..." loading="lazy">
                       </div>
                     </a>
-                    <a href="./pages/detalle.html" class="col">
+                    <a href="./pages/detalle.html" class="col my-3">
                       <div class="card h-60">
-                        <img src="./assets/img/one-piece.jpg" class="card-img-top" alt="..." loading="lazy">
+                        <img src="./assets/img/Tokyo-Mew-Mew.jpg" class="card-img-top" alt="..." loading="lazy">
                       </div>
                     </a>
-                    <a href="./pages/detalle.html" class="col">
+                    <a href="./pages/detalle.html" class="col my-3">
                       <div class="card h-60">
-                        <img src="./assets/img/sakura-cardcaptor.jpg" class="card-img-top" alt="..." loading="lazy">
+                        <img src="./assets/img/tokyo-revengers.jpg" class="card-img-top" alt="..." loading="lazy">
                       </div>
                     </a>
-                    <a href="./pages/detalle.html" class="col">
+                    <a href="./pages/detalle.html" class="col my-3">
                         <div class="card h-90">
-                          <img src="./assets/img/tensei-shitara-slime-datta-ken.jpg" class="card-img-top" alt="..." loading="lazy">
+                          <img src="./assets/img/watashi-ga-motete.jpg" class="card-img-top" alt="..." loading="lazy">
                         </div>
                       </a>
-                      <a href="./pages/detalle.html" class="col">
+                      <a href="./pages/detalle.html" class="col my-3">
                         <div class="card h-60">
-                          <img src="./assets/img/one-punch-man.jpg" class="card-img-top" alt="..." loading="lazy">
+                          <img src="./assets/img/Oshi-no-Ko.jpg" class="card-img-top" alt="..." loading="lazy">
                         </div>
                       </a>
-                      <a href="./pages/detalle.html" class="col">
+                      <a href="./pages/detalle.html" class="col mb-3">
                         <div class="card h-60">
-                          <img src="./assets/img/one-piece.jpg" class="card-img-top" alt="..." loading="lazy" loading="lazy">
+                          <img src="./assets/img/naruto.jpg" class="card-img-top" alt="..." loading="lazy" loading="lazy">
                         </div>
                       </a>
-                      <a href="./pages/detalle.html" class="col">
+                      <a href="./pages/detalle.html" class="col my-3">
                         <div class="card h-60">
-                          <img src="./assets/img/sakura-cardcaptor.jpg" class="card-img-top" alt="..." loading="lazy">
+                          <img src="./assets/img/mob-psycho-100.jpg" class="card-img-top" alt="..." loading="lazy">
                         </div>
                       </a>
-                  </div>
-
-
-                
+                  </div>  
             </section>
         </main>
         <footer >
@@ -165,5 +249,9 @@
             </a>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>
