@@ -23,15 +23,17 @@
         <main class="d-flex justify-content-center align-items-center position-relative">
             <section class="d-flex flex-column otakutv-seccion-inicio-sesion otakutv-bg-azul" data-aos="zoom-in">
                 <h1>Iniciar Sesión</h1>
-                <form action="" method="post">
+                <form id="loginForm" action="" method="post">
                     <div>
-                        <input class="otakutv-input otakutv-bg-azul" type="email" name="email" id="email" placeholder="Email" required>
+                        <input class="otakutv-input otakutv-bg-azul" type="email" name="email" id="email" placeholder="Email" >
+                        <div id="emailError" class="otakutv-error-message mb-2"></div>
                     </div>
                     <div>
-                        <input class="otakutv-input otakutv-bg-azul" type="password" name="password" id="password" placeholder="Contraseña" required>
+                        <input class="otakutv-input otakutv-bg-azul" type="password" name="password" id="password" placeholder="Contraseña" >
+                        <div id="passwordError" class="otakutv-error-message mb-2"></div>
                     </div>
                     <div>
-                        <input class="btn otakutv-btn-principal w-100" type="submit" value="Iniciar Sesión">
+                        <button class="btn otakutv-btn-principal w-100" type="submit">Iniciar Sesión</button>
                     </div>
                     <div>
                         <a class="text-decoration-none otakutv-color-rosa" href="./registrarse.html">No tengo cuenta T-T </a>
@@ -46,5 +48,6 @@
         <script>
           AOS.init();
         </script>
+        <script src="../js/validLogin.js"></script>
     </body>
 </html>

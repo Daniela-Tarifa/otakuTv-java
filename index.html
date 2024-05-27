@@ -21,9 +21,10 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse py-2" id="navbarNavAltMarkup">
+              <div class="collapse navbar-collapse pt-2" id="navbarNavAltMarkup">
                 <div class="navbar-nav w-100 justify-content-end">
                   <a class="nav-link active fs-5 mx-2" aria-current="page" href="#tendencias">Tendencia</a>
+                  <a class="nav-link active fs-5 mx-2" aria-current="page" href="./pages/recomendacion.html">Recomendación</a>
                   <a class="nav-link active fs-5 mx-2" href="./pages/registrarse.html">Registrarse</a>
                   <a class="nav-link active fs-5 mx-2 btn otakutv-btn-principal" href="./pages/inicioSesion.html">Iniciar Sesión</a>
                 </div>
@@ -31,6 +32,24 @@
             </div>
         </nav>
         <main>
+          <nav class="navbar navbar-expand-lg navbar-dark otakutv-bg-violeta p-0">
+            <div class="container-fluid navbar navbar-expand-lg navbar-dark  p-0 my-2 justify-content-center">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup2" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="m-1">Clima</span>
+              </button>
+              <div class="collapse navbar-collapse pb-2 justify-content-around" id="navbarNavAltMarkup2">
+                  <div class="navbar-nav row align-items-center text-center w-100">
+                      <p class="nav-item col m-0 py-1 "><span>Ciudad:</span> <span id="city"></span></p>
+                      <p class="nav-item col m-0 py-1"><span>Temperatura:</span> <span id="temperature"></span> °C</p>
+                      <p class="nav-item col m-0 py-1"><span>Clima:</span> <span id="weather"></span> <img id="weatherIcon" src="" alt=""></p>
+                      <p class="nav-item col m-0 py-1"><span>Humedad:</span> <span id="humidity"></span>%</p>
+                      <p class="nav-item col m-0 py-1"><span>Velocidad del Viento:</span> <span id="windSpeed"></span> m/s</p>
+                  </div>
+              </div>
+            </div>
+          </nav>
+
+
             <section class="otakutv-index-section-bienvenida d-flex align-items-center text-center justify-content-end ">
                 <div class="otakutv-index-section-texto">
                     <h1>Películas y series ilimitadas en un solo lugar</h1>
@@ -53,7 +72,7 @@
                 <div class="row row-cols-1 row-cols-md-4 g-4 mx-5">
                     <a href="./pages/detalle.html" class="col" >
                       <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
-                        <img src="./assets/img/tensei-shitara-slime-datta-ken.jpg" class="card-img-top rounded " alt="anime de Tensei shitara slime datta ken">
+                        <img src="./assets/img/tensei-shitara-slime-datta-ken.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de Tensei shitara slime datta ken">
                         <div class=" text-center ">
                               <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >Tensei-shitara-slime-datta</p>
                         </div>
@@ -61,7 +80,7 @@
                     </a>
                     <a href="./pages/detalle.html" class="col" >
                       <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
-                        <img src="./assets/img/one-piece.jpg" class="card-img-top rounded " alt="anime de One piece">
+                        <img src="./assets/img/one-piece.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de One piece">
                         <div class=" text-center ">
                               <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >One piece</p>
                         </div>
@@ -69,7 +88,7 @@
                     </a>
                     <a href="./pages/detalle.html" class="col" >
                       <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
-                        <img src="./assets/img/one-punch-man.jpg" class="card-img-top rounded " alt="anime de One punch-man">
+                        <img src="./assets/img/one-punch-man.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de One punch-man">
                         <div class=" text-center ">
                               <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >One punch-man</p>
                         </div>
@@ -77,7 +96,7 @@
                     </a>
                     <a href="./pages/detalle.html" class="col" >
                       <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
-                        <img src="./assets/img/sakura-cardcaptor.jpg" class="card-img-top rounded " alt="anime de Sakura card captor">
+                        <img src="./assets/img/sakura-cardcaptor.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de Sakura card captor">
                         <div class=" text-center ">
                               <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >Sakura card captor</p>
                         </div>
@@ -85,7 +104,7 @@
                     </a>
                     <a href="./pages/detalle.html" class="col" >
                       <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
-                        <img src="./assets/img/shield-hero.jpg" class="card-img-top rounded " alt="anime de Shield hero">
+                        <img src="./assets/img/shield-hero.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de Shield hero">
                         <div class=" text-center ">
                               <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >Shield hero</p>
                         </div>
@@ -93,7 +112,7 @@
                     </a>
                     <a href="./pages/detalle.html" class="col" >
                       <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
-                        <img src="./assets/img/attack-of-titan.jpg" class="card-img-top rounded " alt="anime de Attack of titan">
+                        <img src="./assets/img/attack-of-titan.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de Attack of titan">
                         <div class=" text-center ">
                               <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >Attack of titan</p>
                         </div>
@@ -101,7 +120,7 @@
                     </a>
                     <a href="./pages/detalle.html" class="col" >
                       <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
-                        <img src="./assets/img/boku-no-hero.jpg" class="card-img-top rounded " alt="anime de Boku no hero">
+                        <img src="./assets/img/boku-no-hero.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de Boku no hero">
                         <div class=" text-center ">
                               <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >Boku no hero</p>
                         </div>
@@ -109,14 +128,14 @@
                     </a>
                     <a href="./pages/detalle.html" class="col" >
                       <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
-                        <img src="./assets/img/detective-conan.jpg" class="card-img-top rounded " alt="anime de Detective conan">
+                        <img src="./assets/img/detective-conan.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de Detective conan">
                         <div class=" text-center ">
                               <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >Detective conan</p>
                         </div>
                       </div>
                     </a><a href="./pages/detalle.html" class="col" >
                       <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
-                        <img src="./assets/img/dragon-ball-z.jpg" class="card-img-top rounded " alt="anime de Dragon ball z">
+                        <img src="./assets/img/dragon-ball-z.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de Dragon ball z">
                         <div class=" text-center ">
                               <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >Dragon ball z</p>
                         </div>
@@ -124,7 +143,7 @@
                     </a>
                     <a href="./pages/detalle.html" class="col" >
                       <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
-                        <img src="./assets/img/hunter-x-hunter.jpg" class="card-img-top rounded " alt="anime de Hunter x hunter">
+                        <img src="./assets/img/hunter-x-hunter.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de Hunter x hunter">
                         <div class=" text-center ">
                               <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >Hunter x hunter</p>
                         </div>
@@ -132,7 +151,7 @@
                     </a>
                     <a href="./pages/detalle.html" class="col" >
                       <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
-                        <img src="./assets/img/jojo-bizarre-adventure.jpg" class="card-img-top rounded " alt="anime de Jojo bizarre adventure">
+                        <img src="./assets/img/jojo-bizarre-adventure.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de Jojo bizarre adventure">
                         <div class=" text-center ">
                               <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >Jojo bizarre adventure</p>
                         </div>
@@ -140,7 +159,7 @@
                     </a>
                     <a href="./pages/detalle.html" class="col" >
                       <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
-                        <img src="./assets/img/jujutsu-no-kaisen.jpg" class="card-img-top rounded " alt="anime de Jujutsu no kaisen">
+                        <img src="./assets/img/jujutsu-no-kaisen.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de Jujutsu no kaisen">
                         <div class=" text-center ">
                               <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >Jujutsu no kaisen</p>
                         </div>
@@ -148,7 +167,7 @@
                     </a>
                     <a href="./pages/detalle.html" class="col" >
                       <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
-                        <img src="./assets/img/kimetsu-no-yaiba.jpg" class="card-img-top rounded " alt="anime de Kimetsu no yaiba">
+                        <img src="./assets/img/kimetsu-no-yaiba.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de Kimetsu no yaiba">
                         <div class=" text-center ">
                               <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >Kimetsu no yaiba</p>
                         </div>
@@ -156,7 +175,7 @@
                     </a>
                     <a href="./pages/detalle.html" class="col" >
                       <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
-                        <img src="./assets/img/Little-Witch-Academia.jpg" class="card-img-top rounded " alt="anime de Little Witch Academia">
+                        <img src="./assets/img/Little-Witch-Academia.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de Little Witch Academia">
                         <div class=" text-center ">
                               <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >Little Witch Academia</p>
                         </div>
@@ -164,7 +183,7 @@
                     </a>
                     <a href="./pages/detalle.html" class="col" >
                       <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
-                        <img src="./assets/img/madoka-magica.jpg" class="card-img-top rounded " alt="anime de Madoka magica">
+                        <img src="./assets/img/madoka-magica.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de Madoka magica">
                         <div class=" text-center ">
                               <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >Madoka magica</p>
                         </div>
@@ -172,7 +191,7 @@
                     </a>
                     <a href="./pages/detalle.html" class="col">
                       <div class="card h-90 otakutv-bg-azul position-relative otakutv-index-card overflow-hidden">
-                        <img src="./assets/img/mirai-nikki.jpg" class="card-img-top rounded " alt="anime Mirai nikki">
+                        <img src="./assets/img/mirai-nikki.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime Mirai nikki">
                         <div class=" text-center ">
                               <p class="position-absolute top-50 start-50 translate-middle w-100 h-100" >Mirai nikki</p>
                         </div>
@@ -189,42 +208,42 @@
                 <div class="row row-cols-2 row-cols-md-5 g-4 flex-nowrap overflow-auto otakutv-index-seccion-aclamadas mx-1">
                     <a href="./pages/detalle.html" class="col my-3">
                       <div class="card h-60 otakutv-bg-azul">
-                        <img src="./assets/img/Pichi_Pichi_Pitch.jpg" class="card-img-top rounded" alt="anime de Pichi Pichi Pitch" loading="lazy">
+                        <img src="./assets/img/Pichi_Pichi_Pitch.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de Pichi Pichi Pitch" loading="lazy">
                       </div>
                     </a>
                     <a href="./pages/detalle.html" class="col my-3">
                       <div class="card h-60 otakutv-bg-azul">
-                        <img src="./assets/img/sailor-moon.jpg" class="card-img-top rounded" alt="anime de Sailor Moon" loading="lazy">
+                        <img src="./assets/img/sailor-moon.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de Sailor Moon" loading="lazy">
                       </div>
                     </a>
                     <a href="./pages/detalle.html" class="col my-3">
                       <div class="card h-60 otakutv-bg-azul">
-                        <img src="./assets/img/Tokyo-Mew-Mew.jpg" class="card-img-top rounded" alt="anime de Tokyo mew mew" loading="lazy">
+                        <img src="./assets/img/Tokyo-Mew-Mew.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de Tokyo mew mew" loading="lazy">
                       </div>
                     </a>
                     <a href="./pages/detalle.html" class="col my-3">
                       <div class="card h-60 otakutv-bg-azul">
-                        <img src="./assets/img/tokyo-revengers.jpg" class="card-img-top rounded" alt="anime de Tokyo revengers" loading="lazy">
+                        <img src="./assets/img/tokyo-revengers.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de Tokyo revengers" loading="lazy">
                       </div>
                     </a>
                     <a href="./pages/detalle.html" class="col my-3">
                         <div class="card h-60 otakutv-bg-azul">
-                          <img src="./assets/img/watashi-ga-motete.jpg" class="card-img-top rounded" alt="anime de watashi ga motete" loading="lazy">
+                          <img src="./assets/img/watashi-ga-motete.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de watashi ga motete" loading="lazy">
                         </div>
                       </a>
                       <a href="./pages/detalle.html" class="col my-3">
                         <div class="card h-60 otakutv-bg-azul">
-                          <img src="./assets/img/Oshi-no-Ko.jpg" class="card-img-top rounded" alt="anime de Oshi no ko" loading="lazy">
+                          <img src="./assets/img/Oshi-no-Ko.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de Oshi no ko" loading="lazy">
                         </div>
                       </a>
                       <a href="./pages/detalle.html" class="col my-3">
                         <div class="card h-60 otakutv-bg-azul">
-                          <img src="./assets/img/naruto.jpg" class="card-img-top rounded" alt="anime de Naruto" loading="lazy" loading="lazy">
+                          <img src="./assets/img/naruto.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de Naruto" loading="lazy" loading="lazy">
                         </div>
                       </a>
                       <a href="./pages/detalle.html" class="col my-3">
                         <div class="card h-60 otakutv-bg-azul">
-                          <img src="./assets/img/mob-psycho-100.jpg" class="card-img-top rounded" alt="anime de Mob psycho 100" loading="lazy">
+                          <img src="./assets/img/mob-psycho-100.jpg" class="card-img-top rounded otakutv-ajustar-tamaño-card-img" alt="anime de Mob psycho 100" loading="lazy">
                         </div>
                       </a>
                   </div>  
@@ -253,5 +272,6 @@
         <script>
           AOS.init();
         </script>
+        <script src="./js/apiClimas.js"></script>
     </body>
 </html>
