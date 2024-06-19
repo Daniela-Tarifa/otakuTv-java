@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         */
 
         if (isValid) {
-            // Aquí puedes enviar el formulario si todos los campos son válidos
+            // se envia el formulario si todos los campos son válidos
             alert("¡Formulario enviado correctamente!");
             // Por ejemplo:
             // document.getElementById("loginForm").submit();

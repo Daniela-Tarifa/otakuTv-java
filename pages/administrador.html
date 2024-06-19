@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administrador</title>
+    <title>Administrador | OtakuTV - Catálogo de animes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 
@@ -42,51 +42,51 @@
             <h2 class="text-center pt-5 mb-5 fs-1">Gestión de Animes</h2>
             <p></p>
             <form id="animeForm" action="" method="post" enctype="multipart/form-data"
-                class="row  g-3 align-items-center">
-                <div class="col-12 col-md-4">
+                class="row g-3 px-sm-0 px-3">
+                <div class="col-xl-4 col-md-4 col-12">
                     <label for="titulo">Titulo</label>
                     <input class="form-control" type="text" name="titulo" id="titulo">
-                    <div class="error-text"></div>
+                    <div id="tituloError" class="otakutv-error-message mb-2 fw-bolder"></div>
                 </div>
-                <div class="col-4 col-md-3">
+                <div class="col-xl-3 col-md-3 col-12">
                     <label for="fecha">Fecha estreno</label>
                     <input class="form-control" type="date" name="fecha" id="fecha">
-                    <div class="error-text"></div>
+                    <div id="fechaError" class="otakutv-error-message mb-2 fw-bolder"></div>
                 </div>
-                <div class="col-6 col-md-3">
+                <div class="col-xl-3 col-md-3 col-12">
                     <label for="genero">Genero</label>
                     <input class="form-control" type="text" name="genero" id="genero">
-                    <div class="error-text"></div>
+                    <div id="generoError" class="otakutv-error-message mb-2 fw-bolder"></div>
                 </div>
-                <div class="col-2 col-md-2">
+                <div class="col-xl-2 col-md-2 col-12">
                     <label for="duracion">Duración</label>
                     <input class="form-control" type="text" name="duracion" id="duracion">
-                    <div class="error-text"></div>
+                    <div id="duracionError" class="otakutv-error-message mb-2 fw-bolder"></div>
                 </div>
-                <div class="col-6 col-md-4">
+                <div class="col-xl-4 col-md-4 col-12">
                     <label for="director">Director</label>
                     <input class="form-control" type="text" name="director" id="director">
-                    <div class="error-text"></div>
+                    <div id="directorError" class="otakutv-error-message mb-2 fw-bolder"></div>
                 </div>
-                <div class="col-12 col-md-8">
-                    <label for="reparto">reparto</label>
+                <div class="col-xl-8 col-md-8 col-12">
+                    <label for="reparto">Reparto</label>
                     <input class="form-control" type="text" name="reparto" id="reparto">
-                    <div class="error-text"></div>
+                    <div id="repartoError" class="otakutv-error-message mb-2 fw-bolder"></div>
                 </div>
-                <div class="col-12">
+                <div class="col-xl-12 col-12">
                     <label for="sipnosis">Sipnosis</label>
-                    <textarea class="form-control" name="sipnosis" id="sipnosis" cols="30" rows="3"></textarea>
-                    <div class="error-text"></div>
+                    <textarea class="form-control" name="sinopsis" id="sinopsis" cols="30" rows="3"></textarea>
+                    <div id="sinopsisError" class="otakutv-error-message mb-2 fw-bolder"></div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-xl-6 col-md-6 col-12">
                     <label for="imagen">Imagen</label>
                     <input class="form-control" type="file" name="imagen" id="imagen"></input>
-                    <div class="error-text"></div>
+                    <div id="imagenError" class="otakutv-error-message mb-2 fw-bolder"></div>
                 </div>
                 <div class="col-12">
                     <input id="agregarAnime" class="align-self-center btn btn-success" type="submit"
                         value="Agregar Anime"></input>
-                    <div id="error-text-login"></div>
+                <!--<div id="error-text-login"></div>-->
                 </div>
             </form>
         </section>
@@ -94,8 +94,8 @@
         <hr>
 
         <section class="container mt-5 mb-5 overflow-auto">
-            <h2>Listado de Peliculas</h2>
-            <p>Elija una pelicula para ver sus datos y modificarlos</p>
+            <h2>Listado de Animes</h2>
+            <p>Elija un anime para ver sus datos y modificarlos</p>
             <table class="table table-dark table-striped">
                 <thead>
                     <tr>
@@ -114,8 +114,8 @@
                         <td><img class=" img-fluid rounded" src="../assets/img/boku-no-hero.jpg" alt="boku-no-hero">
                         </td>
                         <td>
-                            <button type="button" class="btn btn-success">Modificar</button>
-                            <button type="button" class="btn btn-danger">Eliminar</button>
+                            <button type="button" class="btn btn-success m-1">Modificar</button>
+                            <button type="button" class="btn btn-danger m-1">Eliminar</button>
                         </td>
                     </tr>
                     <tr>
@@ -125,8 +125,8 @@
                         <td><img class="img-fluid rounded" src="../assets/img/dragon-ball-z.jpg" alt="boku-no-hero">
                         </td>
                         <td>
-                            <button type="button" class="btn btn-success">Modificar</button>
-                            <button type="button" class="btn btn-danger">Eliminar</button>
+                            <button type="button" class="btn btn-success m-1">Modificar</button>
+                            <button type="button" class="btn btn-danger m-1">Eliminar</button>
                         </td>
                     </tr>
                     <tr>
@@ -135,8 +135,8 @@
                         <td class="w-25">Action manga, Fantasy</td>
                         <td><img class="img-fluid rounded" src="../assets/img/naruto.jpg" alt="boku-no-hero"></td>
                         <td>
-                            <button type="button" class="btn btn-success">Modificar</button>
-                            <button type="button" class="btn btn-danger">Eliminar</button>
+                            <button type="button" class="btn btn-success m-1">Modificar</button>
+                            <button type="button" class="btn btn-danger m-1">Eliminar</button>
                         </td>
                     </tr>
                 </tbody>
@@ -147,6 +147,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../js/validAdministrador.js"></script>
 </body>
 
 </html>
