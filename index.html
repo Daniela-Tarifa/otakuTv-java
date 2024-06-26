@@ -26,7 +26,8 @@
                   <a class="nav-link active fs-5 mx-2" aria-current="page" href="#tendencias">Tendencia</a>
                   <a class="nav-link active fs-5 mx-2" aria-current="page" href="./pages/recomendacion.html">Recomendación</a>
                   <a class="nav-link active fs-5 mx-2" href="./pages/registrarse.html">Registrarse</a>
-                  <a class="nav-link active fs-5 mx-2 btn otakutv-btn-principal" href="./pages/inicioSesion.html">Iniciar Sesión</a>
+                  <a class="nav-link active fs-5 mx-2 btn otakutv-btn-principal" href="./pages/inicioSesion.html" id="loginButton">Iniciar Sesión</a>
+                  <a class="nav-link active fs-5 mx-2 btn otakutv-btn-principal btn-danger" href="../index.html" onclick="logout()" id="logOutButton">cerrar Sesión</a>
                 </div>
               </div>
             </div>
@@ -38,14 +39,20 @@
                 <span class="m-1">Clima</span>
               </button>
               <div class="collapse navbar-collapse pb-2 justify-content-around" id="navbarNavAltMarkup2">
-                  <div class="navbar-nav row align-items-center text-center w-100">
+                  <div class="navbar-nav row align-items-center text-center w-100" id="navbarToHide"  style="display: none;">
                       <p class="nav-item col m-0 py-1 "><span>Ciudad:</span> <span id="city"></span></p>
                       <p class="nav-item col m-0 py-1"><span>Temperatura:</span> <span id="temperature"></span> °C</p>
                       <p class="nav-item col m-0 py-1"><span>Clima:</span> <span id="weather"></span> <img id="weatherIcon" src="" alt=""></p>
                       <p class="nav-item col m-0 py-1"><span>Humedad:</span> <span id="humidity"></span>%</p>
                       <p class="nav-item col m-0 py-1"><span>Velocidad del Viento:</span> <span id="windSpeed"></span> m/s</p>
                   </div>
+                  <div class="d-flex justify-content-center">
+                    <div class="spinner-border" role="status"  id="spinner">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                  </div>
               </div>
+              
             </div>
           </nav>
 
@@ -273,5 +280,6 @@
           AOS.init();
         </script>
         <script src="./js/apiClimas.js"></script>
+        <script src="./js/index.js"></script>
     </body>
 </html>

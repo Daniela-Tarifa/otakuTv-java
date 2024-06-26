@@ -46,7 +46,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
         if (isValid) {
             // se envia el formulario si todos los campos son válidos
+            localStorage.setItem('isLoggedIn', 'true');
             alert("¡Formulario enviado correctamente!");
+            window.location.href = '../index.html';
             // Por ejemplo:
             // document.getElementById("loginForm").submit();
         }

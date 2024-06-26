@@ -13,6 +13,11 @@ async function fetchWeather(city) {
     const response = await fetch(`${url}?q=${city}&appid=${apiKey}&units=${units}&lang=${lang}`);
     // Convertir la respuesta a formato JSON
     const data = await response.json();
+    if (data) {
+        // Ocultar el spinner de carga
+        document.getElementById('spinner').style.display = 'none'
+        document.getElementById('navbarToHide').style.display = 'flex';
+    }   
     // Devolver los datos del clima
     return data;
 }
@@ -21,7 +26,6 @@ async function fetchWeather(city) {
 async function updateWeatherCard(city) {
     // Obtener los datos del clima para la ciudad especificada
     const weatherData = await fetchWeather(city);
-    console.log(weatherData);
     // Actualizar el elemento HTML con el nombre de la ciudad
     document.getElementById("city").textContent = weatherData.name;
     // Actualizar el elemento HTML con la temperatura
