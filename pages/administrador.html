@@ -96,7 +96,7 @@
         <section class="container mt-5 mb-5 overflow-auto">
             <h2>Listado de Animes</h2>
             <p>Elija un anime para ver sus datos y modificarlos</p>
-            <table class="table table-dark table-striped">
+            <table class="table table-dark table-striped" id="animeTable" >
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -107,7 +107,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <!-- <tr>
                         <th scope="row">1</th>
                         <td>Boku No Hero</td>
                         <td class="w-25">Shonen manga, Comedy, Comedy drama, Superhero, Action manga</td>
@@ -138,7 +138,7 @@
                             <button type="button" class="btn btn-success m-1">Modificar</button>
                             <button type="button" class="btn btn-danger m-1">Eliminar</button>
                         </td>
-                    </tr>
+                    </tr> -->
                 </tbody>
             </table>
         </section>
@@ -148,6 +148,7 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="../js/validAdministrador.js"></script>
+    <script src="../js/bdd.conn.js"></script>
 </body>
 
 </html>

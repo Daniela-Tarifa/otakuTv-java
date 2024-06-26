@@ -1,10 +1,8 @@
 function resetErrorMessages() {
-    console.log("voy a limpiar los divs");
     let errorElements = document.querySelectorAll(".otakutv-error-message");
     errorElements.forEach((element)=> {
         element.innerText = "";
     });
-    console.log("ya limpie los divs");
 }
 function displayErrorMessage(elementId, message) {
     let errorElement = document.getElementById(elementId);
