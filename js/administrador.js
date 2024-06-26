@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('registerButton').style.display = 'none';
   }
 });
-
 function logout() {
   var confirmation = confirm("¿Está seguro que desea cerrar sesión?");
   if (confirmation) {
@@ -19,4 +18,3 @@ function logout() {
 
   }
 }
-
