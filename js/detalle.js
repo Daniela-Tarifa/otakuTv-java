@@ -4,14 +4,11 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('logOutButton').style.display = 'none';
     document.getElementById('adminButton').style.display = 'none';
     document.getElementById('registerButton').style.display = 'bloc';
-    document.getElementById('mainSectionLogged').style.display = 'bloc';
   } else {
     document.getElementById('loginButton').style.display = 'none';
     document.getElementById('registerButton').style.display = 'none';
-    document.getElementById('mainSection').style.display = 'none';
   }
 });
-
 function logout() {
   var confirmation = confirm("¿Está seguro que desea cerrar sesión?");
   if (confirmation) {
@@ -21,4 +18,3 @@ function logout() {
 
   }
 }
-
