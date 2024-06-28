@@ -1,10 +1,8 @@
 function resetErrorMessages() {
-    console.log("voy a limpiar los divs");
     let errorElements = document.querySelectorAll(".otakutv-error-message");
     errorElements.forEach((element)=> {
         element.innerText = "";
     });
-    console.log("ya limpie los divs");
 }
 function displayErrorMessage(elementId, message) {
     let errorElement = document.getElementById(elementId);
@@ -48,7 +46,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
         if (isValid) {
             // se envia el formulario si todos los campos son válidos
+            localStorage.setItem('isLoggedIn', 'true');
             alert("¡Formulario enviado correctamente!");
+            window.location.href = '../index.html';
             // Por ejemplo:
             // document.getElementById("loginForm").submit();
         }

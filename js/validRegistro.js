@@ -1,10 +1,8 @@
 function resetErrorMessages() {
-    console.log("voy a limpiar los divs");
     let errorElements = document.querySelectorAll(".otakutv-error-message");
-    errorElements.forEach((element)=> {
+    errorElements.forEach((element) => {
         element.innerText = "";
     });
-    console.log("ya limpie los divs");
 }
 function displayErrorMessage(elementId, message) {
     let errorElement = document.getElementById(elementId);
@@ -19,10 +17,10 @@ function isValidEmail(email) {
 }
 
 
-document.addEventListener("DOMContentLoaded", ()=>{
+document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("loginForm");
     console.log(form);
-    form.addEventListener("submit", (event)=>{
+    form.addEventListener("submit", (event) => {
         // Evitar que se envíe el formulario automáticamente
         event.preventDefault();
 
@@ -88,4 +86,4 @@ document.addEventListener("DOMContentLoaded", ()=>{
             // document.getElementById("loginForm").submit();
         }
     });
-} );
+});

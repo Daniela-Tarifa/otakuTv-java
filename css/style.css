@@ -54,7 +54,7 @@ body{
     border-width: 3px;
 }
 .otakutv-btn-secundario{
-    background-color: var(--third-color-t);
+    background-color: var(--four-color);
     color:var(--secundary-color-t);
     border-radius: 25px;
     border-color: var(--third-color);

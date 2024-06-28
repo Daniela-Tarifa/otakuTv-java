@@ -28,10 +28,16 @@
                         href="../index.html#tendencias">Tendencia</a>
                     <a class="nav-link active fs-5 mx-2" aria-current="page"
                         href="./recomendacion.html">Recomendación</a>
-                    <a class="nav-link active fs-5 mx-2" href="../pages/registrarse.html">Registrarse</a>
-                    <a class="nav-link active fs-5 mx-2 btn otakutv-btn-principal"
-                        href="../pages/inicioSesion.html">Iniciar
-                        Sesión</a>
+                    <a class="nav-link active fs-5 mx-2" href="../pages/registrarse.html"
+                        id="registerButton">Registrarse</a>
+                    <a class="nav-link active fs-5 mx-2 btn otakutv-btn-principal" href="./pages/inicioSesion.html"
+                        id="loginButton">Iniciar Sesión</a>
+                    <a class="nav-link active fs-5 mx-2 btn otakutv-btn-principal btn-danger" href="../index.html"
+                        onclick="logout()" id="logOutButton">cerrar Sesión</a>
+                    <a class="nav-link active fs-5 mx-2 btn otakutv-btn-secundario" href="./pages/administrador.html"
+                        id="adminButton" style="display: none;"> administrador </a>
+
+
                 </div>
             </div>
         </div>
@@ -41,8 +47,7 @@
 
             <h2 class="text-center pt-5 mb-5 fs-1">Gestión de Animes</h2>
             <p></p>
-            <form id="animeForm" action="" method="post" enctype="multipart/form-data"
-                class="row g-3 px-sm-0 px-3">
+            <form id="animeForm" action="" method="post" enctype="multipart/form-data" class="row g-3 px-sm-0 px-3">
                 <div class="col-xl-4 col-md-4 col-12">
                     <label for="titulo">Titulo</label>
                     <input class="form-control" type="text" name="titulo" id="titulo">
@@ -86,7 +91,7 @@
                 <div class="col-12">
                     <input id="agregarAnime" class="align-self-center btn btn-success" type="submit"
                         value="Agregar Anime"></input>
-                <!--<div id="error-text-login"></div>-->
+                    <!--<div id="error-text-login"></div>-->
                 </div>
             </form>
         </section>
@@ -96,7 +101,7 @@
         <section class="container mt-5 mb-5 overflow-auto">
             <h2>Listado de Animes</h2>
             <p>Elija un anime para ver sus datos y modificarlos</p>
-            <table class="table table-dark table-striped">
+            <table class="table table-dark table-striped" id="animeTable">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -107,7 +112,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <!-- <tr>
                         <th scope="row">1</th>
                         <td>Boku No Hero</td>
                         <td class="w-25">Shonen manga, Comedy, Comedy drama, Superhero, Action manga</td>
@@ -138,7 +143,7 @@
                             <button type="button" class="btn btn-success m-1">Modificar</button>
                             <button type="button" class="btn btn-danger m-1">Eliminar</button>
                         </td>
-                    </tr>
+                    </tr> -->
                 </tbody>
             </table>
         </section>
@@ -148,6 +153,8 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="../js/validAdministrador.js"></script>
+    <script src="../js/administrador.js"></script>
+    <script src="../js/bdd.conn.js"></script>
 </body>
 
 </html>
