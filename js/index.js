@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('logOutButton').style.display = 'none';
     document.getElementById('adminButton').style.display = 'none';
     document.getElementById('registerButton').style.display = 'bloc';
-    document.getElementById('mainSectionLogged').style.display = 'bloc';
+    document.getElementById('mainSectionLogged').style.display = 'none';
   } else {
     document.getElementById('loginButton').style.display = 'none';
     document.getElementById('registerButton').style.display = 'none';
@@ -17,7 +17,7 @@ function logout() {
   if (confirmation) {
     localStorage.removeItem('isLoggedIn');
     document.getElementById('loginButton').style.display = 'none';
-    window.location.href = 'pages/login.html';
+    window.location.href = './login.html';
 
   }
 }
