@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('loginButton').style.display = 'block';
     document.getElementById('logOutButton').style.display = 'none';
     document.getElementById('adminButton').style.display = 'none';
+    document.getElementById('adminButton2').style.display = 'none';
     document.getElementById('registerButton').style.display = 'bloc';
   } else {
     document.getElementById('loginButton').style.display = 'none';

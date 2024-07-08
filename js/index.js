@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('registerButton').style.display = 'bloc';
     document.getElementById('mainSectionLogged').style.display = 'none';
     document.getElementById('adminButton').style.display = 'none';
+    document.getElementById('adminButton2').style.display = 'none';
   }
 });
 
