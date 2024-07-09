@@ -35,42 +35,42 @@ document.addEventListener("DOMContentLoaded", ()=>{
         let isValid = true;
 
         if (titulo === "") {
-            displayErrorMessage("tituloError", "Por favor ingresé un título.");
+            displayErrorMessage("tituloError", "Por favor ingrese un título.");
             isValid = false;
         }
 
         if (fechaEstreno === "") {
-            displayErrorMessage("fechaError", "Por favor selecioné la fecha de estreno.");
+            displayErrorMessage("fechaError", "Por favor selecione la fecha de estreno.");
             isValid = false;
         }
 
         if (genero === "") {
-            displayErrorMessage("generoError", "Por favor ingresé un género.");
+            displayErrorMessage("generoError", "Por favor ingrese un genero.");
             isValid = false;
         }
 
         if (duracion === "") {
-            displayErrorMessage("duracionError", "Por favor ingresé la duración.");
+            displayErrorMessage("duracionError", "Por favor ingrese la duración.");
             isValid = false;
         }
 
         if (director === "") {
-            displayErrorMessage("directorError", "Por favor ingresé el director.");
+            displayErrorMessage("directorError", "Por favor ingrese el director.");
             isValid = false;
         }
 
         if (reparto === "") {
-            displayErrorMessage("repartoError", "Por favor ingresé el reparto.");
+            displayErrorMessage("repartoError", "Por favor ingrese el reparto.");
             isValid = false;
         }
 
         if (sinopsis === "") {
-            displayErrorMessage("sinopsisError", "Por favor ingresé la sinopsis.");
+            displayErrorMessage("sinopsisError", "Por favor ingrese la sinopsis.");
             isValid = false;
         }
 
         if (imagen === "") {
-            displayErrorMessage("imagenError", "Por favor ingresé una imagen.");
+            displayErrorMessage("imagenError", "Por favor ingrese una imagen.");
             isValid = false;
         }
 

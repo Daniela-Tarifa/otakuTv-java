@@ -1,4 +1,4 @@
-const API = 'https://65ad277dadbd5aa31be03afc.mockapi.io/peliculas';
+const API = 'http://localhost:8080/app/otakutv';
 const form = document.getElementById('animeForm');
 
 const tableBody = document.querySelector('#animeTable tbody');
@@ -6,6 +6,10 @@ const tableBody = document.querySelector('#animeTable tbody');
 form.addEventListener('submit', function (event) {
   event.preventDefault();
   const formData = new FormData(form);
+
+  // for (let [key, value] of formData.entries()) {
+  //   console.log(key, value);
+  // }
 
   fetch(API, {
     method: 'POST',
