@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
         // Validar los campos
         let titulo = document.getElementById("titulo").value.trim();
-        let fechaEstreno = document.getElementById("fecha").value.trim();
+        // let fechaEstreno = document.getElementById("fecha").value.trim();
         let genero = document.getElementById("genero").value.trim();
         let duracion = document.getElementById("duracion").value.trim();
         let director = document.getElementById("director").value.trim();
@@ -39,10 +39,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
             isValid = false;
         }
 
-        if (fechaEstreno === "") {
-            displayErrorMessage("fechaError", "Por favor selecione la fecha de estreno.");
-            isValid = false;
-        }
+        // if (fechaEstreno === "") {
+        //     displayErrorMessage("fechaError", "Por favor selecione la fecha de estreno.");
+        //     isValid = false;
+        // }
 
         if (genero === "") {
             displayErrorMessage("generoError", "Por favor ingrese un genero.");
